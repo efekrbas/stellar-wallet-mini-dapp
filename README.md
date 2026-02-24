@@ -64,17 +64,6 @@ npm test
 ![Test Sonuçları ScreenShot](URL_BURAYA_GELECEK - Örn: ./public/screenshots/test-results.png)
 *(Test süitinin başarıyla geçtiğini gösteren ekran görüntüsü yukarıdaki alana eklenebilir)*
 
-## 🌐 Deploy (Vercel)
-
-Bu projeyi Vercel'e deploy etmek oldukça basittir:
-
-1. Projeyi GitHub'a pushlayın.
-2. [Vercel](https://vercel.com/new) üzerinden "Import Project" seçeneği ile deponuzu seçin.
-3. **Build Settings**: Vercel varsayılan olarak Next.js ayarlarını tanıyacaktır. Değişiklik yapmanıza gerek yoktur.
-4. **Environment Variables**: (Opsiyonel) Eğer farklı bir network kullanmak isterseniz aşağıdaki değişkeni ekleyebilirsiniz:
-   - `NEXT_PUBLIC_HORIZON_URL`: `https://horizon-testnet.stellar.org` (Veya Mainnet URL)
-5. **Deploy** butonuna tıklayın.
-
 ## 🔗 Linkler
 
 - **Live Demo**: [Buraya Vercel linkinizi ekleyin](https://stellar-wallet-mini-dapp-yourname.vercel.app)
