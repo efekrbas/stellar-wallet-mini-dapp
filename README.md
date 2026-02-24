@@ -68,8 +68,11 @@ npm test
 
 ## 🔗 Links
 
-- **Live Demo**: [Embed your Vercel link here](https://stellar-wallet-mini-dapp-yourname.vercel.app)
-- **Demo Video**: [Embed your Video link here](https://youtube.com/...)
+- **Live Demo**: [](https://stellar-wallet-mini-dapp-efekrbs.vercel.app)
+
+## Demo Video
+
+
 
 ## 🤝 Contributing
 
