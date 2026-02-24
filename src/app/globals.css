@@ -158,3 +158,64 @@ body {
 .btn-link:hover {
   text-decoration: underline;
 }
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  align-items: center;
+}
+
+.balance {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin: 0.5rem 0;
+}
+
+.tip {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+.btn-group {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.btn-group button {
+  flex: 1;
+}
+
+.danger {
+  color: var(--error) !important;
+  border-color: var(--error) !important;
+}
+
+.danger:hover {
+  background: var(--error) !important;
+  color: white !important;
+}
+
+.loading {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: .5;
+  }
+}
