@@ -64,8 +64,11 @@ npm test
 ![Test Results Screenshot](URL_HERE - e.g., ./public/screenshots/test-results.png)
 *(A screenshot showing the successful test suite execution can be added here)*
 
+<<<<<<< HEAD
  button.
 
+=======
+>>>>>>> beaf570 (refactor: fix lint errors, improve type safety, and add 100% test coverage for freighter utility)
 ## 🔗 Links
 
 - **Live Demo**: [Embed your Vercel link here](https://stellar-wallet-mini-dapp-yourname.vercel.app)

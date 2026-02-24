@@ -24,7 +24,8 @@ export default function WalletConnect() {
             setIsLoading(true);
             const xlmBalance = await getAccountBalance(key);
             setBalance(xlmBalance);
-        } catch (err: any) {
+        } catch (err: unknown) {
+            console.error("Balance fetch error:", err);
             setError("Failed to fetch balance. Is your account funded on Testnet?");
         } finally {
             setIsLoading(false);
@@ -38,9 +39,9 @@ export default function WalletConnect() {
             const key = await connectFreighterWallet();
             setPublicKey(key);
             await fetchBalance(key);
-        } catch (err: any) {
+        } catch (err: unknown) {
             console.error("Connection error:", err);
-            setError(err.message || "Failed to connect to Freighter.");
+            setError(err instanceof Error ? err.message : "Failed to connect to Freighter.");
         } finally {
             setIsLoading(false);
         }

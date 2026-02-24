@@ -14,8 +14,13 @@ export async function getAccountBalance(publicKey: string): Promise<string | nul
         const account = await server.loadAccount(publicKey);
         const xlmBalance = account.balances.find((balance) => balance.asset_type === "native");
         return xlmBalance ? xlmBalance.balance : "0";
-    } catch (error: any) {
-        if (error.response && error.response.status === 404) {
+    } catch (error: unknown) {
+        if (
+            error &&
+            typeof error === 'object' &&
+            'response' in error &&
+            (error as { response: { status: number } }).response.status === 404
+        ) {
             // Account not found (possibly not funded on Testnet)
             return "0";
         }
