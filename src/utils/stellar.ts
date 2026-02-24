@@ -1,7 +1,7 @@
 import { Horizon } from "stellar-sdk";
 
-// Initialize Horizon server for Testnet
-const SERVER_URL = "https://horizon-testnet.stellar.org";
+// Initialize Horizon server
+const SERVER_URL = process.env.NEXT_PUBLIC_HORIZON_URL || "https://horizon-testnet.stellar.org";
 const server = new Horizon.Server(SERVER_URL);
 
 /**
