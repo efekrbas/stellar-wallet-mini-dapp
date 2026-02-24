@@ -1,6 +1,6 @@
 # Stellar Wallet Mini-dApp
 
-Modern ve kullanıcı dostu bir arayüz ile Stellar ağında cüzdan yönetimi sağlayan bir mini dApp. Bu uygulama, kullanıcıların **Stellar Freighter** cüzdanlarını bağlamalarına ve **Testnet** üzerindeki XLM bakiyelerini anlık olarak görüntülemelerine olanak tanır.
+A modern and user-friendly mini-dApp for managing Stellar network wallets. This application allows users to connect their **Stellar Freighter** wallets and view their **Testnet** XLM balances in real-time.
 
 [![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat-square&logo=next.js)](https://nextjs.org/)
 [![Stellar](https://img.shields.io/badge/Stellar-Network-black?style=flat-square&logo=stellar)](https://stellar.org/)
@@ -9,73 +9,84 @@ Modern ve kullanıcı dostu bir arayüz ile Stellar ağında cüzdan yönetimi s
 
 ---
 
-## 🚀 Özellikler
+## 🚀 Features
 
-- **Freighter Wallet Entegrasyonu**: Güvenli ve hızlı cüzdan bağlantısı.
-- **Canlı Bakiye Sorgulama**: Stellar Horizon API kullanarak Testnet bakiyesi görüntüleme.
-- **Modüler Mimari**: Kolay bakım ve geliştirme için `utils` ve `components` ayrımı.
-- **Karanlık Mod Desteği**: Sistem tercihlerine uyumlu modern tasarım.
-- **Unit Testler**: Jest ve React Testing Library ile %100 kapsama hedefli test süiti.
+- **Freighter Wallet Integration**: Secure and fast wallet connection.
+- **Live Balance Fetching**: View Testnet balances using the Stellar Horizon API.
+- **Modular Architecture**: Separated `utils` and `components` for easy maintenance.
+- **Dark Mode Support**: Modern design compatible with system preferences.
+- **Unit Testing**: Suite built with Jest and React Testing Library.
 
-## 🛠️ Teknolojiler
+## 🛠️ Technology Stack
 
 - **Frontend**: [Next.js 15+](https://nextjs.org/) (App Router)
-- **Dil**: [TypeScript](https://www.typescriptlang.org/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
 - **Blockchain SDK**: 
-  - `@stellar/freighter-api` (Cüzdan etkileşimi)
-  - `stellar-sdk` (Horizon API iletişimi)
-- **Stil**: Vanilla CSS (Custom Properties)
-- **Test**: [Jest](https://jestjs.io/) & [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+  - `@stellar/freighter-api` (Wallet interaction)
+  - `stellar-sdk` (Horizon API communication)
+- **Styling**: Vanilla CSS (Custom Properties)
+- **Testing**: [Jest](https://jestjs.io/) & [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
 
-## 📋 Gereksinimler
+## 📋 Requirements
 
-Uygulamanın çalışması için tarayıcınızda **Stellar Freighter** cüzdan eklentisinin kurulu olması gerekmektedir.
+To use the application, you must have the **Stellar Freighter** browser extension installed.
 
-- 🔗 [Freighter Cüzdan eklentisini buradan indirebilirsiniz.](https://www.freighter.app/)
-- **Önemli**: Cüzdanınızın **Testnet** ağında olduğundan emin olun.
+- 🔗 [Download the Freighter Wallet extension here](https://www.freighter.app/)
+- **Important**: Ensure your wallet is set to the **Testnet** network.
 
-## ⚙️ Kurulum ve Çalıştırma
+## ⚙️ Installation & Setup
 
-### 1. Depoyu Klonlayın
+### 1. Clone the Repository
 ```bash
 git clone https://github.com/efekrbas/stellar-wallet-mini-dapp.git
 cd stellar-wallet-mini-dapp
 ```
 
-### 2. Bağımlılıkları Yükleyin
+### 2. Install Dependencies
 ```bash
 npm install
 ```
 
-### 3. Uygulamayı Başlatın
+### 3. Run the Application
 ```bash
 npm run dev
 ```
-Uygulama varsayılan olarak `http://localhost:3000` adresinde çalışacaktır.
+The application will run at `http://localhost:3000` by default.
 
-## 🧪 Testleri Çalıştırma
+## 🧪 Running Tests
 
-Unit testleri çalıştırmak için şu komutu kullanın:
+To run the unit tests, use the following command:
 ```bash
 npm test
 ```
 
-### Test Sonuçları
-![Test Sonuçları ScreenShot](URL_BURAYA_GELECEK - Örn: ./public/screenshots/test-results.png)
-*(Test süitinin başarıyla geçtiğini gösteren ekran görüntüsü yukarıdaki alana eklenebilir)*
+### Test Results
+![Test Results Screenshot](URL_HERE - e.g., ./public/screenshots/test-results.png)
+*(A screenshot showing the successful test suite execution can be added here)*
 
-## 🔗 Linkler
+## 🌐 Deployment (Vercel)
 
-- **Live Demo**: [Buraya Vercel linkinizi ekleyin](https://stellar-wallet-mini-dapp-yourname.vercel.app)
-- **Demo Video**: [Video Linki Buraya](https://youtube.com/...)
+Deploying this project to Vercel is straightforward:
 
-## 🤝 Katkıda Bulunma
+1. Push the project to GitHub.
+2. Go to [Vercel](https://vercel.com/new) and select "Import Project" for your repository.
+3. **Build Settings**: Vercel will automatically recognize the Next.js settings. No changes are needed.
+4. **Environment Variables**: (Optional) To use a different network, add the following variable:
+   - `NEXT_PUBLIC_HORIZON_URL`: `https://horizon-testnet.stellar.org` (Or Mainnet URL)
+5. Click the **Deploy** button.
 
-1. Projeyi fork'layın.
-2. Yeni bir feature branch açın (`git checkout -b feature/YeniOzellik`).
-3. Değişikliklerinizi commit edin (`git commit -m 'feat: yeni özellik eklendi'`).
-4. Branch'inizi pushlayın (`git push origin feature/YeniOzellik`).
-5. Bir Pull Request oluşturun.
+## 🔗 Links
+
+- **Live Demo**: [Embed your Vercel link here](https://stellar-wallet-mini-dapp-yourname.vercel.app)
+- **Demo Video**: [Embed your Video link here](https://youtube.com/...)
+
+## 🤝 Contributing
+
+1. Fork the project.
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`).
+3. Commit your changes (`git commit -m 'feat: add amazing feature'`).
+4. Push to the branch (`git push origin feature/AmazingFeature`).
+5. Open a Pull Request.
 
 ---
 Built with ❤️ by [efekrbas](https://github.com/efekrbas)
