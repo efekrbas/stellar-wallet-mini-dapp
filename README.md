@@ -64,16 +64,7 @@ npm test
 ![Test Results Screenshot](URL_HERE - e.g., ./public/screenshots/test-results.png)
 *(A screenshot showing the successful test suite execution can be added here)*
 
-## 🌐 Deployment (Vercel)
-
-Deploying this project to Vercel is straightforward:
-
-1. Push the project to GitHub.
-2. Go to [Vercel](https://vercel.com/new) and select "Import Project" for your repository.
-3. **Build Settings**: Vercel will automatically recognize the Next.js settings. No changes are needed.
-4. **Environment Variables**: (Optional) To use a different network, add the following variable:
-   - `NEXT_PUBLIC_HORIZON_URL`: `https://horizon-testnet.stellar.org` (Or Mainnet URL)
-5. Click the **Deploy** button.
+ button.
 
 ## 🔗 Links
 
