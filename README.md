@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Stellar Wallet Mini-dApp
 
-## Getting Started
+Modern ve kullanıcı dostu bir arayüz ile Stellar ağında cüzdan yönetimi sağlayan bir mini dApp. Bu uygulama, kullanıcıların **Stellar Freighter** cüzdanlarını bağlamalarına ve **Testnet** üzerindeki XLM bakiyelerini anlık olarak görüntülemelerine olanak tanır.
 
-First, run the development server:
+[![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat-square&logo=next.js)](https://nextjs.org/)
+[![Stellar](https://img.shields.io/badge/Stellar-Network-black?style=flat-square&logo=stellar)](https://stellar.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
+[![Jest](https://img.shields.io/badge/Jest-Testing-red?style=flat-square&logo=jest)](https://jestjs.io/)
 
+---
+
+## 🚀 Özellikler
+
+- **Freighter Wallet Entegrasyonu**: Güvenli ve hızlı cüzdan bağlantısı.
+- **Canlı Bakiye Sorgulama**: Stellar Horizon API kullanarak Testnet bakiyesi görüntüleme.
+- **Modüler Mimari**: Kolay bakım ve geliştirme için `utils` ve `components` ayrımı.
+- **Karanlık Mod Desteği**: Sistem tercihlerine uyumlu modern tasarım.
+- **Unit Testler**: Jest ve React Testing Library ile %100 kapsama hedefli test süiti.
+
+## 🛠️ Teknolojiler
+
+- **Frontend**: [Next.js 15+](https://nextjs.org/) (App Router)
+- **Dil**: [TypeScript](https://www.typescriptlang.org/)
+- **Blockchain SDK**: 
+  - `@stellar/freighter-api` (Cüzdan etkileşimi)
+  - `stellar-sdk` (Horizon API iletişimi)
+- **Stil**: Vanilla CSS (Custom Properties)
+- **Test**: [Jest](https://jestjs.io/) & [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+
+## 📋 Gereksinimler
+
+Uygulamanın çalışması için tarayıcınızda **Stellar Freighter** cüzdan eklentisinin kurulu olması gerekmektedir.
+
+- 🔗 [Freighter Cüzdan eklentisini buradan indirebilirsiniz.](https://www.freighter.app/)
+- **Önemli**: Cüzdanınızın **Testnet** ağında olduğundan emin olun.
+
+## ⚙️ Kurulum ve Çalıştırma
+
+### 1. Depoyu Klonlayın
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/efekrbas/stellar-wallet-mini-dapp.git
+cd stellar-wallet-mini-dapp
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Bağımlılıkları Yükleyin
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Uygulamayı Başlatın
+```bash
+npm run dev
+```
+Uygulama varsayılan olarak `http://localhost:3000` adresinde çalışacaktır.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🧪 Testleri Çalıştırma
 
-## Learn More
+Unit testleri çalıştırmak için şu komutu kullanın:
+```bash
+npm test
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Test Sonuçları
+![Test Sonuçları ScreenShot](URL_BURAYA_GELECEK - Örn: ./public/screenshots/test-results.png)
+*(Test süitinin başarıyla geçtiğini gösteren ekran görüntüsü yukarıdaki alana eklenebilir)*
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔗 Linkler
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Live Demo**: [Demo Linki Buraya](https://example.com)
+- **Demo Video**: [Video Linki Buraya](https://youtube.com/...)
 
-## Deploy on Vercel
+## 🤝 Katkıda Bulunma
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Projeyi fork'layın.
+2. Yeni bir feature branch açın (`git checkout -b feature/YeniOzellik`).
+3. Değişikliklerinizi commit edin (`git commit -m 'feat: yeni özellik eklendi'`).
+4. Branch'inizi pushlayın (`git push origin feature/YeniOzellik`).
+5. Bir Pull Request oluşturun.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+Built with ❤️ by [efekrbas](https://github.com/efekrbas)
