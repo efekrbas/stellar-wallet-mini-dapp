@@ -61,7 +61,8 @@ npm test
 ```
 
 ### Test Results
-![Test Results Screenshot](./public/screenshots/test_results.png)
+![Test Results Screenshot](./public/screenshots/test_results.png) 
+<br>
 *(A screenshot showing the successful test suite execution can be added here)*
 
 
