@@ -61,7 +61,7 @@ npm test
 ```
 
 ### Test Results
-![Test Results Screenshot](URL_HERE - e.g., ./public/screenshots/test-results.png)
+![Test Results Screenshot](./public/screenshots/test_results.png)
 *(A screenshot showing the successful test suite execution can be added here)*
 
 <<<<<<< HEAD
